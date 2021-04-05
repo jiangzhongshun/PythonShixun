@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>登录</title>
+</head>
+<body>
+<form action="/login" method="POST">
+    {% csrf_token %}
+    <h3>{{ msg }}</h3>
+    <h5>可以参考的地址：</h5>
+    <span>登录网页：</span><span>http://localhost:8000/login</span><br>
+    <span>注册网页：</span><span>http://localhost:8000/zhuce</span><br>
+    <span>用户管理模块：</span><span>http://localhost:8000/userList</span><br>
+    <span>爬虫数据展示：</span><span>http://localhost:8000/showDatas</span><br>
+    <h3 align="center">login</h3>
+<table align="center">
+    <tr>
+        <td>账户：</td>
+        <td><input type="text" name="username"></td>
+    </tr>
+    <tr>
+        <td>密码：</td>
+        <td><input type="text" name="password"></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td align="right"><input type="submit" value="登录"></td>
+    </tr>
+</table>
+
+</form>
+</body>
+</html>

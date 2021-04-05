@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h3 align="center">爬虫数据展示</h3>
+<table border="1">
+    <h3>猫眼TOP100</h3>
+    <thead>
+    <tr>
+        <th>电影名</th>
+        <th>主演</th>
+        <th>上映时间</th>
+        <th>评分</th>
+    </tr>
+    </thead>
+
+    {% for data in data %}
+    <tr>
+        <td>{{ data.movieName }}</td>
+        <td>{{ data.movieActor }}</td>
+        <td>{{ data.movieTime }}</td>
+        <td>{{ data.movieGrade }}</td>
+    </tr>
+    {% endfor %}
+
+</table>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div align="center">
+    <form action="useCrawlers/" method="POST">
+        <span>选择网站</span>
+        <span>https://maoyan.com/board/4</span><br>
+        <span>https://www.jd.com/</span>
+    <h3>开始爬虫</h3>
+    <hr>
+        {% csrf_token %}
+    <input type="text" name="crawlerUrl" placeholder="请输入你要爬取的网址" size="50">
+    <br>
+    <br>
+    <input type="submit" value="开爬">
+    </form>
+</div>
+</body>
+</html>

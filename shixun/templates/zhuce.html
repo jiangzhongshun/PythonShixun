@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>注册</title>
+</head>
+<body>
+<form action="/zhuce" method="POST">
+    {% csrf_token %}
+    <h3 align="center">注册</h3>
+    <table align="center">
+        <tr>
+            <td>用户名：</td>
+            <td><input name="username" type="text"></td>
+        </tr>
+        <tr>
+            <td>密码：</td>
+            <td><input name="password" type="text"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="right"><input type="submit" value="注册"></td>
+        </tr>
+    </table>
+
+</form>
+</body>
+</html>
